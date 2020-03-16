@@ -9,3 +9,4 @@ jobs:
           NO_PROXY: example.com
     steps:
       - run: echo Hello!
+      - run: exit 1
