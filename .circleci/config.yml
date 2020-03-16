@@ -1,0 +1,11 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: alpine
+        environment:
+          HTTPS_PROXY: example.net:80
+          NO_PROXY: example.com
+    steps:
+      - run: echo Hello!
